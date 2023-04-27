@@ -1,2 +1,6 @@
-# ASP.NET-Project
-About This is an academic group project based on ASP .Net. The aim of this project is to create an online platform that provides fuel delivery and car servicing services to customers. The platform will allow customers to order fuel online and schedule car servicing appointments at their convenience.
+# MollaFuelCarService <br/>
+Lovely group members: <br/>
+1. KHURSHED ALAM SIFAT (ID: 20-42422-1)
+2. MD. ABDUL HAMID (ID: 20-42602-1)
+3. MD. NADIM HASAN (ID: 20-43004-1)
+4. S.K. MOSTAFA MASUD (ID: 20-42790-1)
