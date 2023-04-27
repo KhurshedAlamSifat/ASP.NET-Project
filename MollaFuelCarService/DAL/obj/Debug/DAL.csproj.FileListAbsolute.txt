@@ -38,3 +38,17 @@ C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarSe
 C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll.config
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.pdb
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.dll
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.xml
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tables.resources
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb

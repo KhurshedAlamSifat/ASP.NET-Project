@@ -140,19 +140,7 @@
                 }); ;
             }
 
-           /* //seed for ProductOrder Table
-            for (int i = 1; i <= 7; i++)
-            {
-                Random random = new Random();
-
-                context.ProductOrders.AddOrUpdate(new Models.ProductOrder
-                {
-                    ProductId = random.Next(1, 16),
-                    OrderId = random.Next(1, 8),
-                    Quantity = random.Next(1, 5),
-                    Price = random.Next(2000, 3000)
-                }); ;
-            }*/
+           
         }
     }
 }
