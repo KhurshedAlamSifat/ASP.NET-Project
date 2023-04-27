@@ -124,7 +124,7 @@
             }
 
             //seed for Order Table
-            for (int i = 1; i <= 7; i++)
+          /*  for (int i = 1; i <= 7; i++)
             {
                 Random random = new Random();
                 int status = random.Next(1, 3);
@@ -138,7 +138,7 @@
                     Status = status == 1 ? "Pending" : "Deliverd"
 
                 }); ;
-            }
+            }*/
 
            /* //seed for ProductOrder Table
             for (int i = 1; i <= 7; i++)
