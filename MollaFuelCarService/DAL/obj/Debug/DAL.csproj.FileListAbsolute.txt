@@ -52,3 +52,4 @@ E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.c
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.newupdate.resources
