@@ -104,7 +104,7 @@
                 });
             }
 
-            /*//seed for FuelOrder Table
+            //seed for FuelOrder Table
             for (int i = 1; i <= 10; i++)
             {
                 Random random = new Random();
@@ -140,7 +140,7 @@
                 }); ;
             }
 
-            //seed for ProductOrder Table
+           /* //seed for ProductOrder Table
             for (int i = 1; i <= 7; i++)
             {
                 Random random = new Random();
