@@ -24,3 +24,17 @@ C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCa
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.pdb
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\EntityFramework.dll
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\EntityFramework.xml
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\BLL.dll
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\BLL.pdb
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\AutoMapper.dll
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\DAL.dll
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\EntityFramework.dll
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\DAL.pdb
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\DAL.dll.config
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\AutoMapper.xml
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\EntityFramework.xml
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.dll
+C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.pdb
