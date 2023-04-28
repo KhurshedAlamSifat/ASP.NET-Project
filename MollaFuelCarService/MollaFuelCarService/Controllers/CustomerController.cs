@@ -1,6 +1,7 @@
 ﻿using BLL.DTOs.CustomerDTOs;
 using BLL.Services.CustomerServices;
 using DAL.Models;
+using MollaFuelCarService.Authenticate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
+        [Logged]
         [HttpGet]
         [Route("api/customers/{username}")]
         public HttpResponseMessage Customers( string username)

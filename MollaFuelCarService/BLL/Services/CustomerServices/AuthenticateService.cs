@@ -35,5 +35,26 @@ namespace BLL.Services.CustomerServices
             }
             return null;
         }
+
+        public static bool IsTokenValid(string tkey)
+        {
+            var exToken = DataAccessFactory.TokenData().Read(tkey);
+            if(exToken != null && exToken.Expired == null)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool Logged(string tkey)
+        {
+            var exToken = DataAccessFactory.TokenData().Read(tkey);
+            exToken.Expired = DateTime.Now;
+            var res = DataAccessFactory.TokenData().Update(exToken);
+            if(res != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
