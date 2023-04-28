@@ -44,7 +44,6 @@ E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\Entit
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.xml
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tables.resources
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
@@ -52,3 +51,4 @@ E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.d
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources

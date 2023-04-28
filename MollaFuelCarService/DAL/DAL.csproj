@@ -69,7 +69,7 @@
     <Compile Include="Models\ProductOrder.cs" />
     <Compile Include="Models\ServiceMan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\AdminRepos\Class1.cs" />
+    <Compile Include="Repos\AdminRepos\AdminRepo.cs" />
     <Compile Include="Repos\CustomerRepos\CustomerRepo.cs" />
     <Compile Include="Repos\DeliveryManRepos\Class1.cs" />
     <Compile Include="Repos\Repo.cs" />
