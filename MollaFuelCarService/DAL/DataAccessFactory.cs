@@ -1,5 +1,6 @@
 ﻿using DAL.Interfaces;
 using DAL.Models;
+using DAL.Repos.AdminRepos;
 using DAL.Repos.CustomerRepos;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,7 @@ namespace DAL
         {
             return new CustomerRepo();
         }
+
+        public static IRepo<Admin, string, Admin> N_AdminData() { return new AdminRepo(); }
     }
 }
