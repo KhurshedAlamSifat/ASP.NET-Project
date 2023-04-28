@@ -86,6 +86,7 @@
     <Compile Include="Repos\AdminRepos\AdminRepo.cs" />
     <Compile Include="Repos\AdminRepos\DeliveryManRepocs.cs" />
     <Compile Include="Repos\AdminRepos\ProductRepo.cs" />
+    <Compile Include="Repos\AdminRepos\ServiceManRepo.cs" />
     <Compile Include="Repos\CustomerRepos\CustomerRepo.cs" />
     <Compile Include="Repos\CustomerRepos\TokenRepo.cs" />
     <Compile Include="Repos\DeliveryManRepos\Class1.cs" />
