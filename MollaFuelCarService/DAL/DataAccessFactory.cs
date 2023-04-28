@@ -19,6 +19,8 @@ namespace DAL
 
         public static IRepo<Admin, string, Admin> N_AdminData() { return new AdminRepo(); }
 
-        public static IRepo<Product, int, Product> N_Productdata() { return new ProductRepo(); }
+        public static IRepo<Product, int, Product> N_ProductData() { return new ProductRepo(); }
+
+        public static IRepo<DeliveryMan, string, DeliveryMan> N_DeliveryManData() { return new DeliveryManRepo(); }
     }
 }
