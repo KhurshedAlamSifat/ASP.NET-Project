@@ -52,3 +52,6 @@ E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.p
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendb.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendbupdate.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendbupdate2.resources

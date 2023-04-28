@@ -21,7 +21,7 @@
 
             //Seed for Customer Table
 
-            Random random = new Random();
+           /* Random random = new Random();
 
             for (int i = 1; i <= 5; i++)
             {
@@ -131,7 +131,7 @@
                     TotalPrice = random.Next(2000, 3000),
                     Status = status == 1 ? "Pending" : "Deliverd"
                 }); 
-            }
+            }*/
 
         }
     }

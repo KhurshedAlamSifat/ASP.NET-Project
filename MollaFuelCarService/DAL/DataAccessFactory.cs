@@ -17,6 +17,16 @@ namespace DAL
             return new CustomerRepo();
         }
 
+        public static IAuth<bool> AuthData() 
+        {
+            return new CustomerRepo();
+        }
+
+        public static IRepo<Token, string, Token> TokenData()
+        {
+            return new TokenRepo();
+        }
+
         public static IRepo<Admin, string, Admin> N_AdminData() { return new AdminRepo(); }
 
         public static IRepo<Product, int, Product> N_ProductData() { return new ProductRepo(); }

@@ -53,11 +53,24 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="MFCSContext.cs" />
     <Compile Include="Migrations\202304280640342_EditAdminTableAgain.cs" />
     <Compile Include="Migrations\202304280640342_EditAdminTableAgain.designer.cs">
       <DependentUpon>202304280640342_EditAdminTableAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304281521000_tokendb.cs" />
+    <Compile Include="Migrations\202304281521000_tokendb.designer.cs">
+      <DependentUpon>202304281521000_tokendb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304281635003_tokendbupdate.cs" />
+    <Compile Include="Migrations\202304281635003_tokendbupdate.designer.cs">
+      <DependentUpon>202304281635003_tokendbupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304281639584_tokendbupdate2.cs" />
+    <Compile Include="Migrations\202304281639584_tokendbupdate2.designer.cs">
+      <DependentUpon>202304281639584_tokendbupdate2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -68,11 +81,13 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductOrder.cs" />
     <Compile Include="Models\ServiceMan.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\AdminRepos\AdminRepo.cs" />
     <Compile Include="Repos\AdminRepos\DeliveryManRepocs.cs" />
     <Compile Include="Repos\AdminRepos\ProductRepo.cs" />
     <Compile Include="Repos\CustomerRepos\CustomerRepo.cs" />
+    <Compile Include="Repos\CustomerRepos\TokenRepo.cs" />
     <Compile Include="Repos\DeliveryManRepos\Class1.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\ServiceManRepos\Class1.cs" />
@@ -84,6 +99,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202304280640342_EditAdminTableAgain.resx">
       <DependentUpon>202304280640342_EditAdminTableAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304281521000_tokendb.resx">
+      <DependentUpon>202304281521000_tokendb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304281635003_tokendbupdate.resx">
+      <DependentUpon>202304281635003_tokendbupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304281639584_tokendbupdate2.resx">
+      <DependentUpon>202304281639584_tokendbupdate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,5 +18,6 @@ namespace DAL
         public DbSet<DeliveryMan> DeliveryMans { get; set; }
         public DbSet<ServiceMan> ServiceMans { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<Token> Tokens { get; set; }
     }
 }

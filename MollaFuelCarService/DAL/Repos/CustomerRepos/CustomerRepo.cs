@@ -2,14 +2,23 @@
 using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.Repos.CustomerRepos
 {
-    internal class CustomerRepo : Repo, IRepo<Customer, string, Customer>
+    internal class CustomerRepo : Repo, IRepo<Customer, string, Customer>, IAuth<bool>
     {
+        public bool Authenticate(string username, string password)
+        {
+            var data = db.Customers.FirstOrDefault(u=>u.Username.Equals(username) &&
+            u.Password.Equals(password));
+            if (data !=null)return true;
+            return false;
+        }
+
         public Customer Create(Customer obj)
         {
             db.Customers.Add(obj);
