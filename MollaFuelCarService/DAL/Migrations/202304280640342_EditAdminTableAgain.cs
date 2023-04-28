@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class tables : DbMigration
+    public partial class EditAdminTableAgain : DbMigration
     {
         public override void Up()
         {
@@ -13,6 +13,8 @@
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Username = c.String(nullable: false, maxLength: 100),
+                        Name = c.String(nullable: false, maxLength: 100),
+                        Email = c.String(nullable: false, maxLength: 100),
                         Password = c.String(nullable: false, maxLength: 100),
                     })
                 .PrimaryKey(t => t.Id);

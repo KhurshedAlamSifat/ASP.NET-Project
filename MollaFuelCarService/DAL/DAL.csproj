@@ -55,13 +55,9 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="MFCSContext.cs" />
-    <Compile Include="Migrations\202304271732220_tables.cs" />
-    <Compile Include="Migrations\202304271732220_tables.designer.cs">
-      <DependentUpon>202304271732220_tables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304271924233_newupdate.cs" />
-    <Compile Include="Migrations\202304271924233_newupdate.designer.cs">
-      <DependentUpon>202304271924233_newupdate.cs</DependentUpon>
+    <Compile Include="Migrations\202304280640342_EditAdminTableAgain.cs" />
+    <Compile Include="Migrations\202304280640342_EditAdminTableAgain.designer.cs">
+      <DependentUpon>202304280640342_EditAdminTableAgain.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -84,11 +80,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304271732220_tables.resx">
-      <DependentUpon>202304271732220_tables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304271924233_newupdate.resx">
-      <DependentUpon>202304271924233_newupdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304280640342_EditAdminTableAgain.resx">
+      <DependentUpon>202304280640342_EditAdminTableAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

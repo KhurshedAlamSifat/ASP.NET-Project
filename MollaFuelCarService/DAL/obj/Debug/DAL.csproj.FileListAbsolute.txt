@@ -22,8 +22,6 @@ C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCa
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tables.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll.config
 C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll
 C:\Users\dhruv\Desktop\dotnet\MollaFuelCarService\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.pdb
@@ -52,4 +50,5 @@ E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.c
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.newupdate.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

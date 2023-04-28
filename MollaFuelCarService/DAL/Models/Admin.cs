@@ -15,7 +15,11 @@ namespace DAL.Models
         [StringLength(100)]
         public string Username { get; set; }
         [Required]
-        public DateTime Dob { get; set; }
+        [StringLength(100)]
+        public string Name { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Email { get; set; }
         [Required]
         [StringLength(100)]
         public string Password { get; set; }
