@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BLL.DTOs.AdminDTOs;
 using BLL.DTOs.CustomerDTOs;
 using DAL;
 using DAL.Models;
@@ -86,6 +87,19 @@ namespace BLL.Services.CustomerServices
             });
             var mapper = new Mapper(cfg);
             var mapped = mapper.Map<CustomerOrderDTO>(data);
+            return mapped;
+        }
+
+        public static bool OrderDelete(string username)
+        {
+            var data = DataAccessFactory.CustomerData().Delete(username);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Customer, CustomerOrderDTO>();
+                c.CreateMap<Order, OrderDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<bool>(data);
             return mapped;
         }
 

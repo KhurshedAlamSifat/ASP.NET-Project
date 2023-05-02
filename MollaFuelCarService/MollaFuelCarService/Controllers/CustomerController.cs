@@ -104,5 +104,20 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("api/customers/{username}/order/delete")]
+        public HttpResponseMessage CustomersOrdesDelete(string username)
+        {
+            try
+            {
+                var data = CustomerService.OrderDelete(username);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
     }
 }
