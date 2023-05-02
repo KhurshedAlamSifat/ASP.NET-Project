@@ -60,6 +60,14 @@
     <Compile Include="Migrations\202305021611579_AllTableAdded.designer.cs">
       <DependentUpon>202305021611579_AllTableAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305022126353_sm.cs" />
+    <Compile Include="Migrations\202305022126353_sm.designer.cs">
+      <DependentUpon>202305022126353_sm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305022129240_sm2.cs" />
+    <Compile Include="Migrations\202305022129240_sm2.designer.cs">
+      <DependentUpon>202305022129240_sm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -81,7 +89,7 @@
     <Compile Include="Repos\CustomerRepos\TokenRepo.cs" />
     <Compile Include="Repos\DeliveryManRepos\DeliverManRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
-    <Compile Include="Repos\ServiceManRepos\Class1.cs" />
+    <Compile Include="Repos\ServiceManRepos\ServiceManRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +99,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305021611579_AllTableAdded.resx">
       <DependentUpon>202305021611579_AllTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305022126353_sm.resx">
+      <DependentUpon>202305022126353_sm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305022129240_sm2.resx">
+      <DependentUpon>202305022129240_sm2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

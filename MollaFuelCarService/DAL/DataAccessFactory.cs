@@ -37,6 +37,9 @@ namespace DAL
 
         public static IRepo<DeliveryMan, string, DeliveryMan> N_DeliveryManData() { return new DeliveryManRepo(); }
 
-        public static IRepo<ServiceMan, string, ServiceMan> N_ServiceManData() { return new ServiceManRepo(); }
+        public static IRepo<ServiceMan, string, ServiceMan> ServiceManData() 
+        { 
+            return new ServiceManRepo(); 
+        }
     }
 }
