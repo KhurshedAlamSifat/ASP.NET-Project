@@ -21,7 +21,7 @@
 
             //Seed for Customer Table
 
-           /* Random random = new Random();
+            Random random = new Random();
 
             for (int i = 1; i <= 5; i++)
             {
@@ -115,7 +115,7 @@
                     DeliverAddress = "Road-" + random.Next(1, 15) + ", Area-" + random.Next(2, 5),
                     TotalPrice = random.Next(2000, 3000),
                     Status = status == 1 ? "Pending" : "Deliverd"
-                }); 
+                });
             }
 
             //seed for Order Table
@@ -130,8 +130,8 @@
                     DeliverAddress = "Road-" + random.Next(1, 15) + ", Area-" + random.Next(2, 5),
                     TotalPrice = random.Next(2000, 3000),
                     Status = status == 1 ? "Pending" : "Deliverd"
-                }); 
-            }*/
+                });
+            }
 
         }
     }

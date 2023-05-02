@@ -72,3 +72,4 @@ E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\o
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.addUserTable.resources
