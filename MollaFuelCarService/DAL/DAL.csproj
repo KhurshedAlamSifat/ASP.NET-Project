@@ -56,25 +56,9 @@
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="MFCSContext.cs" />
-    <Compile Include="Migrations\202304280640342_EditAdminTableAgain.cs" />
-    <Compile Include="Migrations\202304280640342_EditAdminTableAgain.designer.cs">
-      <DependentUpon>202304280640342_EditAdminTableAgain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304281521000_tokendb.cs" />
-    <Compile Include="Migrations\202304281521000_tokendb.designer.cs">
-      <DependentUpon>202304281521000_tokendb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304281635003_tokendbupdate.cs" />
-    <Compile Include="Migrations\202304281635003_tokendbupdate.designer.cs">
-      <DependentUpon>202304281635003_tokendbupdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304281639584_tokendbupdate2.cs" />
-    <Compile Include="Migrations\202304281639584_tokendbupdate2.designer.cs">
-      <DependentUpon>202304281639584_tokendbupdate2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305020940055_addUserTable.cs" />
-    <Compile Include="Migrations\202305020940055_addUserTable.designer.cs">
-      <DependentUpon>202305020940055_addUserTable.cs</DependentUpon>
+    <Compile Include="Migrations\202305021611579_AllTableAdded.cs" />
+    <Compile Include="Migrations\202305021611579_AllTableAdded.designer.cs">
+      <DependentUpon>202305021611579_AllTableAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -105,20 +89,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304280640342_EditAdminTableAgain.resx">
-      <DependentUpon>202304280640342_EditAdminTableAgain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304281521000_tokendb.resx">
-      <DependentUpon>202304281521000_tokendb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304281635003_tokendbupdate.resx">
-      <DependentUpon>202304281635003_tokendbupdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304281639584_tokendbupdate2.resx">
-      <DependentUpon>202304281639584_tokendbupdate2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305020940055_addUserTable.resx">
-      <DependentUpon>202305020940055_addUserTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305021611579_AllTableAdded.resx">
+      <DependentUpon>202305021611579_AllTableAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

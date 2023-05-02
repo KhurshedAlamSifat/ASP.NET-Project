@@ -49,12 +49,7 @@ E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.c
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\DOT_net_FInal_project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendb.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendbupdate.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendbupdate2.resources
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll.config
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.pdb
@@ -72,7 +67,6 @@ E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\o
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net_final_Project(admin adding)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.addUserTable.resources
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll.config
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.pdb
@@ -91,3 +85,5 @@ E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CoreComp
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.AllTableAdded.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

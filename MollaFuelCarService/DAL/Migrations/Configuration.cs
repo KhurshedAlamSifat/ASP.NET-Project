@@ -19,10 +19,21 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
 
-            //Seed for Customer Table
-
             Random random = new Random();
 
+            for (int i = 1; i <= 5; i++)
+            {
+
+                context.Admins.AddOrUpdate(new Models.Admin
+                {
+                    Name = Guid.NewGuid().ToString().Substring(0, 10),
+                    Username = "Admin-" + i,
+                    Email = "adminuser" + i + "@gmail.com",
+                    Password = Guid.NewGuid().ToString().Substring(0, 6)
+                });
+            }
+
+            //Seed for Customer Table
             for (int i = 1; i <= 5; i++)
             {
                 int year = random.Next(1950, 2022); // Generate a random year between 1950 and 2021
@@ -132,7 +143,6 @@
                     Status = status == 1 ? "Pending" : "Deliverd"
                 });
             }
-
         }
     }
 }

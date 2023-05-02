@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class EditAdminTableAgain : DbMigration
+    public partial class AllTableAdded : DbMigration
     {
         public override void Up()
         {
@@ -130,6 +130,29 @@
                     })
                 .PrimaryKey(t => t.Username);
             
+            CreateTable(
+                "dbo.Tokens",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        TKey = c.String(nullable: false, maxLength: 100),
+                        CreatedAt = c.DateTime(nullable: false),
+                        Expired = c.DateTime(),
+                        Username = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Users",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Username = c.String(),
+                        Password = c.String(),
+                        UserType = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
@@ -146,6 +169,8 @@
             DropIndex("dbo.Orders", new[] { "OrderedBy" });
             DropIndex("dbo.FuelOrders", new[] { "DeliveredBy" });
             DropIndex("dbo.FuelOrders", new[] { "OrderedBy" });
+            DropTable("dbo.Users");
+            DropTable("dbo.Tokens");
             DropTable("dbo.ServiceMen");
             DropTable("dbo.Products");
             DropTable("dbo.ProductOrders");
