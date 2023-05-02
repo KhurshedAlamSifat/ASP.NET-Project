@@ -51,6 +51,7 @@
     <Compile Include="DTOs\AdminDTOs\ProductDTO.cs" />
     <Compile Include="DTOs\AdminDTOs\ServiceManDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\CustomerDTO.cs" />
+    <Compile Include="DTOs\CustomerDTOs\CustomerOrderDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\OrderDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\TokenDTO.cs" />
     <Compile Include="DTOs\DeliveryManDTOs\Class1.cs" />

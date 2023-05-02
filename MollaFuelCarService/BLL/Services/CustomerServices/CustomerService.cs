@@ -76,6 +76,19 @@ namespace BLL.Services.CustomerServices
             return mapped;
         }
 
+        public static CustomerOrderDTO CustomersOrders(string username)
+        {
+            var data = DataAccessFactory.CustomerData().Read(username);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Customer, CustomerOrderDTO>();
+                c.CreateMap<Order, OrderDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<CustomerOrderDTO>(data);
+            return mapped;
+        }
+
     }
 
 }

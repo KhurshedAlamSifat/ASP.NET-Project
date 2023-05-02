@@ -90,12 +90,12 @@ namespace MollaFuelCarService.Controllers
         }
 
         [HttpGet]
-        [Route("api/orders")]
-        public HttpResponseMessage Ordes()
+        [Route("api/customers/{username}/order")]
+        public HttpResponseMessage CustomersOrder(string username)
         {
             try
             {
-                var data = OrderService.Get();
+                var data = CustomerService.CustomersOrders(username);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
