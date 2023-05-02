@@ -51,6 +51,7 @@
     <Compile Include="DTOs\AdminDTOs\ProductDTO.cs" />
     <Compile Include="DTOs\AdminDTOs\ServiceManDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\CustomerDTO.cs" />
+    <Compile Include="DTOs\CustomerDTOs\OrderDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\TokenDTO.cs" />
     <Compile Include="DTOs\DeliveryManDTOs\Class1.cs" />
     <Compile Include="DTOs\ServiceManDTOs\Class1.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Services\AdminServices\AdminService.cs" />
     <Compile Include="Services\CustomerServices\AuthenticateService.cs" />
     <Compile Include="Services\CustomerServices\CustomerService.cs" />
+    <Compile Include="Services\CustomerServices\OrderService.cs" />
     <Compile Include="Services\DeliveryManServices\Class1.cs" />
     <Compile Include="Services\ServiceManServices\Class1.cs" />
   </ItemGroup>

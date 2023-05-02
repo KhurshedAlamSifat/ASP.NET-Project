@@ -45,6 +45,11 @@ namespace BLL.Services.CustomerServices
             });
             var mapper = new Mapper(cfg);
             var mapped = mapper.Map<CustomerDTO>(data);
+           // var usermapped = mapper.Map<User>(data);
+            //usermapped.UserType = "Customer";
+
+            //DataAccessFactory.UserData().Create(usermapped);
+            
             return mapped;
         }
         public static CustomerDTO Update(Customer customer)
@@ -70,6 +75,7 @@ namespace BLL.Services.CustomerServices
             var mapped = mapper.Map<bool>(data);
             return mapped;
         }
+
     }
 
 }

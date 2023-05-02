@@ -89,5 +89,20 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/orders")]
+        public HttpResponseMessage Ordes()
+        {
+            try
+            {
+                var data = OrderService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
     }
 }
