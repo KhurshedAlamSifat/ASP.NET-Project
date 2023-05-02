@@ -11,7 +11,7 @@ using BLL.DTOs.AdminDTOs;
 
 namespace BLL.Services.AdminServices
 {
-    public  class AdminService
+    public class AdminService
     {
         public static List<AdminDTO> Get()
         {
@@ -25,9 +25,9 @@ namespace BLL.Services.AdminServices
             return mapped;
         }
 
-        public static AdminDTO Get(string username)
+        public static AdminDTO Get(int id)
         {
-            var data = DataAccessFactory.N_AdminData().Read(username);
+            var data = DataAccessFactory.N_AdminData().Read(id);
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<Admin, AdminDTO>();
@@ -62,7 +62,7 @@ namespace BLL.Services.AdminServices
 
         public static bool Delete(int id)
         {
-            var data = DataAccessFactory.N_AdminData().Delete(id.ToString());
+            var data = DataAccessFactory.N_AdminData().Delete(id);
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<Admin, AdminDTO>();
@@ -90,7 +90,7 @@ namespace BLL.Services.AdminServices
             return mapped;
         }
 
-        public static ProductDTO Get(int id)
+        public static ProductDTO GetProduct(int id)
         {
             var data = DataAccessFactory.N_ProductData().Read(id);
             var cfg = new MapperConfiguration(c =>
@@ -102,7 +102,7 @@ namespace BLL.Services.AdminServices
             return mapped;
         }
 
-        public static ProductDTO Insert(Product product)
+        public static ProductDTO InsertProduct(Product product)
         {
             var data = DataAccessFactory.N_ProductData().Create(product);
             var cfg = new MapperConfiguration(c =>

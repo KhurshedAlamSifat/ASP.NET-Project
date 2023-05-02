@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos.AdminRepos
 {
-    internal class AdminRepo : Repo, IRepo<Admin,string, Admin>
+    internal class AdminRepo : Repo, IRepo<Admin, int, Admin>
     {
         public Admin Create(Admin obj)
         {
@@ -18,7 +18,7 @@ namespace DAL.Repos.AdminRepos
 
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
             db.Admins.Remove(ex);
@@ -31,16 +31,20 @@ namespace DAL.Repos.AdminRepos
             return db.Admins.ToList();
         }
 
-        public Admin Read(string id)
+        public Admin Read(int id)
         {
             return db.Admins.Find(id);
         }
 
         public Admin Update(Admin obj)
         {
-            var admin = Read(obj.Password);
-            db.Entry(admin).CurrentValues.SetValues(obj);
+            var ex = Read(obj.Id);
+            db.Entry(ex).CurrentValues.SetValues(obj);
+            if (db.SaveChanges() > 0) return obj;
             return null;
         }
+
+
+
     }
 }

@@ -1,6 +1,5 @@
 ﻿using DAL.Interfaces;
 using DAL.Models;
-using DAL.Repos;
 using DAL.Repos.AdminRepos;
 using DAL.Repos.CustomerRepos;
 using System;
@@ -13,20 +12,12 @@ namespace DAL
 {
     public class DataAccessFactory
     {
-        public static IRepo<User,string,User> UserData()
-        {
-            return new UserRepo();
-        }
         public static IRepo<Customer, string, Customer> CustomerData()
         {
             return new CustomerRepo();
         }
-        public static IRepo<Order, int, Order> OrderData()
-        {
-            return new OrderRepo();
-        }
 
-        public static IAuth<bool> AuthData() 
+        public static IAuth<bool> AuthData()
         {
             return new CustomerRepo();
         }
@@ -36,7 +27,11 @@ namespace DAL
             return new TokenRepo();
         }
 
-        public static IRepo<Admin, string, Admin> N_AdminData() { return new AdminRepo(); }
+        public static IRepo<Order, int, Order> OrderData()
+        {
+            return new OrderRepo();
+        }
+        public static IRepo<Admin, int, Admin> N_AdminData() { return new AdminRepo(); }
 
         public static IRepo<Product, int, Product> N_ProductData() { return new ProductRepo(); }
 
