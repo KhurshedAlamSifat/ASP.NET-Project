@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL.Repos;
 
 namespace DAL
 {
@@ -17,6 +18,11 @@ namespace DAL
         public static IRepo<Customer, string, Customer> CustomerData()
         {
             return new CustomerRepo();
+        }
+
+        public static IRepo<User, string, User> UserData()
+        {
+            return new UserRepo();  
         }
 
         public static IAuth<bool> AuthData()

@@ -47,7 +47,7 @@ namespace MollaFuelCarService.Controllers
 
         [HttpPost]
         [Route("api/customers/add")]
-        public HttpResponseMessage CustomersAdd(Customer customer)
+        public HttpResponseMessage CustomersAdd(CustomerDTO customer)
         {
             try
             {

@@ -37,21 +37,21 @@ namespace BLL.Services.CustomerServices
             return mapped;
         }
 
-        public static CustomerDTO Insert(Customer customer)
+        public static CustomerDTO Insert(CustomerDTO customer)
         {
-            var data = DataAccessFactory.CustomerData().Create(customer);
+            
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Customer, CustomerDTO>();
+                c.CreateMap<CustomerDTO, Customer>();
+                c.CreateMap<CustomerDTO, User>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<CustomerDTO>(data);
-           // var usermapped = mapper.Map<User>(data);
-            //usermapped.UserType = "Customer";
-
-            //DataAccessFactory.UserData().Create(usermapped);
-            
-            return mapped;
+            var users = mapper.Map<User>(customer);
+            users.UserType = "Customer";
+            DataAccessFactory.UserData().Create(users);
+            var customers = mapper.Map<Customer>(customer);
+            DataAccessFactory.CustomerData().Create(customers);
+            return customer;
         }
         public static CustomerDTO Update(Customer customer)
         {

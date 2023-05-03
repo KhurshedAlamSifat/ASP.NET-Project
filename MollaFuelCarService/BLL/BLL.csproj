@@ -56,6 +56,7 @@
     <Compile Include="DTOs\CustomerDTOs\FuelOrderDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\OrderDTO.cs" />
     <Compile Include="DTOs\CustomerDTOs\TokenDTO.cs" />
+    <Compile Include="DTOs\CustomerDTOs\UserDTO.cs" />
     <Compile Include="DTOs\DeliveryManDTOs\DeliveryManDTO.cs" />
     <Compile Include="DTOs\ServiceManDTOs\ServiceManDTO.cs" />
     <Compile Include="DTOs\ServiceManDTOs\ServiceManHistoryDTO.cs" />
