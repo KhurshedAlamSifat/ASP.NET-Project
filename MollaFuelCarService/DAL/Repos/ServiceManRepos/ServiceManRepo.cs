@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Repos.ServiceManRepos
+namespace DAL.Repos.ServiceManRepo
 {
     internal class ServiceManRepo : Repo, IRepo<ServiceMan, string, ServiceMan>, IAuth<bool>
     {

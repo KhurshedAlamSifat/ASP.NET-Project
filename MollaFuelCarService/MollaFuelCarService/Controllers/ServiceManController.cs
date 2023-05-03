@@ -85,6 +85,50 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
+        [HttpGet]
+        [Route("api/orderlist")]
+        public HttpResponseMessage Orderlist()
+        {
+            try
+            {
+                var data = ServiceManOrderlistService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("api/orderlist/{OrderId}")]
+        public HttpResponseMessage Orderlist(int OrderId)
+        {
+            try
+            {
+                var data = ServiceManOrderlistService.Get(OrderId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("api/orderlist/{OrderId}/delete")]
+        public HttpResponseMessage OrderIdDelete(int OrderId)
+        {
+            try
+            {
+                var data = ServiceManOrderlistService.Delete(OrderId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
 
     }
 }
