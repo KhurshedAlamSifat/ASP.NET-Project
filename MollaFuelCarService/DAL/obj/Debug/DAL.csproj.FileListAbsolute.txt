@@ -75,11 +75,6 @@ E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.Sql
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.xml
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.EditAdminTableAgain.resources
-E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendb.resources
-E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendbupdate.resources
-E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.tokendbupdate2.resources
-E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.addUserTable.resources
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
@@ -120,3 +115,9 @@ C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj
 C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
 C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
 C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources
+E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.AllTableAdded.resources
+E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm.resources
+E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm2.resources
+E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
+E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
+E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources
