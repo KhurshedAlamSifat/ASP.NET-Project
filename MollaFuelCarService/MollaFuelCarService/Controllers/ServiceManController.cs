@@ -1,5 +1,6 @@
 ﻿using BLL.Services.CustomerServices;
 using BLL.Services.ServiceManServices;
+using BLL.Services.ServiceManHistoryServices;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -122,6 +123,50 @@ namespace MollaFuelCarService.Controllers
             try
             {
                 var data = ServiceManOrderlistService.Delete(OrderId);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+         [HttpGet]
+        [Route("api/servicehistory")]
+        public HttpResponseMessage ServiceManHistorys()
+        {
+            try
+            {
+                var data = ServiceManHistoryService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("api/servicehistory/{Id}")]
+        public HttpResponseMessage ServiceManHistorys(int Id)
+        {
+            try
+            {
+                var data = ServiceManHistoryService.Get(Id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("api/servicehistory/{Id}/delete")]
+        public HttpResponseMessage ServiceManHistorysDelete(int Id)
+        {
+            try
+            {
+                var data = ServiceManHistoryService.Delete(Id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

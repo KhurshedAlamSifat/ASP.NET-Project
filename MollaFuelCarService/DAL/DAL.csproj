@@ -76,6 +76,10 @@
     <Compile Include="Migrations\202305030334087_sm4.designer.cs">
       <DependentUpon>202305030334087_sm4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305030430089_sm5.cs" />
+    <Compile Include="Migrations\202305030430089_sm5.designer.cs">
+      <DependentUpon>202305030430089_sm5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -85,6 +89,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductOrder.cs" />
     <Compile Include="Models\ServiceMan.cs" />
+    <Compile Include="Models\ServiceManHistory.cs" />
     <Compile Include="Models\ServiceManOrderlist.cs" />
     <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
@@ -98,6 +103,7 @@
     <Compile Include="Repos\CustomerRepos\TokenRepo.cs" />
     <Compile Include="Repos\DeliveryManRepos\DeliverManRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\ServiceManRepos\ServiceManHistoryRepo.cs" />
     <Compile Include="Repos\ServiceManRepos\ServiceManOrderlistRepo.cs" />
     <Compile Include="Repos\ServiceManRepos\ServiceManRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305030334087_sm4.resx">
       <DependentUpon>202305030334087_sm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305030430089_sm5.resx">
+      <DependentUpon>202305030430089_sm5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

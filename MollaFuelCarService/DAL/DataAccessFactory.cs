@@ -3,6 +3,7 @@ using DAL.Models;
 using DAL.Repos.AdminRepos;
 using DAL.Repos.CustomerRepos;
 using DAL.Repos.ServiceManOrderlistRepo;
+using DAL.Repos.ServiceManHistoryRepo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,6 +46,10 @@ namespace DAL
         public static IRepo<ServiceManOrderlist, int, ServiceManOrderlist> ServiceManOrderlistData()
         {
             return new ServiceManOrderlistRepo();
+        }
+        public static IRepo<ServiceManHistory, int, ServiceManHistory> ServiceManHistorytData()
+        {
+            return new ServiceManHistoryRepo();
         }
     }
 }

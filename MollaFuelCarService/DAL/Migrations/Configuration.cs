@@ -5,6 +5,7 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
+
     internal sealed class Configuration : DbMigrationsConfiguration<DAL.MFCSContext>
     {
         public Configuration()
@@ -160,7 +161,24 @@
 
                 });
             }
-        }
+            for (int i = 1; i <= 5; i++)
+            {
+                int status = random.Next(1, 3);
+                int year = random.Next(1950, 2022); // Generate a random year between 1950 and 2021
+                int month = random.Next(1, 13); // Generate a random month between 1 and 12
+                int daysInMonth = DateTime.DaysInMonth(year, month);
+                int day = random.Next(1, daysInMonth + 1);
+                int genderValue = random.Next(1, 3);
+                context.ServiceManHistorys.AddOrUpdate(new Models.ServiceManHistory
+                {
+                    Product = Guid.NewGuid().ToString().Substring(0, 10),
+
+                    SupplierName = Guid.NewGuid().ToString().Substring(0, 10),
+                    Quantity = random.Next(1, 13)
+
+                });
+            }
         }
     }
+}
 
