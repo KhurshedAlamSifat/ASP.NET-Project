@@ -99,6 +99,7 @@
     <Compile Include="Repos\AdminRepos\ProductRepo.cs" />
     <Compile Include="Repos\AdminRepos\ServiceManRepo.cs" />
     <Compile Include="Repos\CustomerRepos\CustomerRepo.cs" />
+    <Compile Include="Repos\CustomerRepos\FuelOrderRepo.cs" />
     <Compile Include="Repos\CustomerRepos\OrderRepo.cs" />
     <Compile Include="Repos\CustomerRepos\TokenRepo.cs" />
     <Compile Include="Repos\DeliveryManRepos\DeliverManRepo.cs" />

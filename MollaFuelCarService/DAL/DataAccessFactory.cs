@@ -33,6 +33,12 @@ namespace DAL
         {
             return new OrderRepo();
         }
+
+        public static IRepo<FuelOrder, int, FuelOrder> FuelOrderData()
+        {
+            return new FuelOrderRepo();
+        }
+
         public static IRepo<Admin, int, Admin> N_AdminData() { return new AdminRepo(); }
 
         public static IRepo<Product, int, Product> N_ProductData() { return new ProductRepo(); }

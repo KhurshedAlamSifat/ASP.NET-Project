@@ -121,3 +121,8 @@ E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm2.
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm2.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources

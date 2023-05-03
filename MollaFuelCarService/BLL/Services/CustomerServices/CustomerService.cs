@@ -103,6 +103,31 @@ namespace BLL.Services.CustomerServices
             return mapped;
         }
 
+        public static CustomerFuelOrderDTO CustomersFuelOrders(string username)
+        {
+            var data = DataAccessFactory.CustomerData().Read(username);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Customer, CustomerOrderDTO>();
+                c.CreateMap<FuelOrder, FuelOrderDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<CustomerFuelOrderDTO>(data);
+            return mapped;
+        }
+
+        public static bool FuelOrderDelete(string username)
+        {
+            var data = DataAccessFactory.CustomerData().Delete(username);
+            var cfg = new MapperConfiguration(c =>
+            {
+                c.CreateMap<Customer, CustomerOrderDTO>();
+                c.CreateMap<FuelOrder, FuelOrderDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<bool>(data);
+            return mapped;
+        }
     }
 
 }
