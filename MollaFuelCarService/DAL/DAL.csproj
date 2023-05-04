@@ -88,6 +88,10 @@
     <Compile Include="Migrations\202305041442335_RemovePicture.designer.cs">
       <DependentUpon>202305041442335_RemovePicture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305041952486_someedit.cs" />
+    <Compile Include="Migrations\202305041952486_someedit.designer.cs">
+      <DependentUpon>202305041952486_someedit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -145,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305041442335_RemovePicture.resx">
       <DependentUpon>202305041442335_RemovePicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305041952486_someedit.resx">
+      <DependentUpon>202305041952486_someedit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -37,16 +37,21 @@ namespace BLL.Services.AdminServices
             return mapped;
         }
 
-        public static AdminDTO Insert(Admin admin)
+        public static AdminDTO Insert(AdminDTO admin)
         {
-            var data = DataAccessFactory.N_AdminData().Create(admin);
+
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Admin, AdminDTO>();
+                c.CreateMap<AdminDTO, Admin>();
+                c.CreateMap<AdminDTO, User>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<AdminDTO>(data);
-            return mapped;
+            var users = mapper.Map<User>(admin);
+            users.UserType = "Admin";
+            DataAccessFactory.UserData().Create(users);
+            var admins = mapper.Map<Admin>(admin);
+            DataAccessFactory.N_AdminData().Create(admins);
+            return admin;
         }
         public static AdminDTO Update(Admin admin)
         {

@@ -1,4 +1,5 @@
-﻿using BLL.Services.CustomerServices;
+﻿using BLL.DTOs.DeliveryManDTOs;
+using BLL.Services.CustomerServices;
 using BLL.Services.DeliveryManServices;
 using DAL.Models;
 using MollaFuelCarService.Authenticate;
@@ -48,7 +49,7 @@ namespace MollaFuelCarService.Controllers
         //--------------------------
         [HttpPost]
         [Route("api/DeliveryMans/add")]
-        public HttpResponseMessage DeliveryMansAdd(DeliveryMan deliveryMan)
+        public HttpResponseMessage DeliveryMansAdd(DeliveryManDTO deliveryMan)
         {
             try
             {

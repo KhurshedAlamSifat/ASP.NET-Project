@@ -1,4 +1,5 @@
-﻿using BLL.Services.AdminServices;
+﻿using BLL.DTOs.AdminDTOs;
+using BLL.Services.AdminServices;
 
 using DAL.Models;
 using MollaFuelCarService.Authenticate;
@@ -46,10 +47,9 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
-        [Logged]
         [HttpPost]
         [Route("api/admin/add")]
-        public HttpResponseMessage ADD_Admin(Admin admin)
+        public HttpResponseMessage ADD_Admin(AdminDTO admin)
         {
             try
             {

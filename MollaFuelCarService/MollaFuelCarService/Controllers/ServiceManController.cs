@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using BLL.DTOs.ServiceManDTOs;
 
 namespace MollaFuelCarService.Controllers
 {
@@ -45,7 +46,7 @@ namespace MollaFuelCarService.Controllers
 
         [HttpPost]
         [Route("api/serviceman/add")]
-        public HttpResponseMessage ServiceMansAdd(ServiceMan ServiceMan)
+        public HttpResponseMessage ServiceMansAdd(ServiceManDTO ServiceMan)
         {
             try
             {

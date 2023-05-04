@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions.Impl;
-using BLL.DTOs.CustomerDTOs;
 using BLL.DTOs.DeliveryManDTOs;
 using DAL;
 using DAL.Models;
@@ -39,16 +38,21 @@ namespace BLL.Services.DeliveryManServices
         }
 
         //-------------------------
-        public static DeliveryManDTO Insert(DeliveryMan deliveryMan)
+        public static DeliveryManDTO Insert(DeliveryManDTO deliveryman)
         {
-            var data = DataAccessFactory.N_DeliveryManData().Create(deliveryMan);
+
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<DeliveryMan, DeliveryManDTO>();
+                c.CreateMap<DeliveryManDTO, DeliveryMan>();
+                c.CreateMap<DeliveryManDTO, User>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<DeliveryManDTO>(data);
-            return mapped;
+            var users = mapper.Map<User>(deliveryman);
+            users.UserType = "DeliveryMan";
+            DataAccessFactory.UserData().Create(users);
+            var delivers = mapper.Map<DeliveryMan>(deliveryman);
+            DataAccessFactory.N_DeliveryManData().Create(delivers);
+            return deliveryman;
         }
         //-----------------------
         public static DeliveryManDTO Update(DeliveryMan deliveryMan)
