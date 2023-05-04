@@ -126,3 +126,5 @@ C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCa
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
 C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.Picture.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.RemovePicture.resources
