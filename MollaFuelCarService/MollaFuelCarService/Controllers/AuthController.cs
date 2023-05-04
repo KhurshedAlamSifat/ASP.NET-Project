@@ -1,4 +1,5 @@
 ﻿using BLL.Services.CustomerServices;
+using MollaFuelCarService.Authenticate;
 using MollaFuelCarService.Models;
 using System;
 using System.Collections.Generic;
@@ -6,10 +7,12 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Services.Description;
 
 namespace MollaFuelCarService.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class AuthController : ApiController
     {
         [HttpPost]
@@ -28,6 +31,23 @@ namespace MollaFuelCarService.Controllers
             catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
+        [Logged]
+        [HttpPost]
+        [Route("api/logout")]
+        public HttpResponseMessage Logout()
+        {
+            var token = Request.Headers.Authorization.ToString();
+            try
+            {
+                var res = AuthenticateService.Logout(token);
+                return Request.CreateResponse(HttpStatusCode.OK, res);
+            }
+            catch(Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new {Message = ex.Message});  
             }
         }
     }

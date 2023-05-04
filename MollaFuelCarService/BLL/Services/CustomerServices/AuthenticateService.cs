@@ -45,7 +45,7 @@ namespace BLL.Services.CustomerServices
             }
             return false;
         }
-        public static bool Logged(string tkey)
+        public static bool Logout(string tkey)
         {
             var exToken = DataAccessFactory.TokenData().Read(tkey);
             exToken.Expired = DateTime.Now;

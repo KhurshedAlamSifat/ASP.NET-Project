@@ -617,3 +617,6 @@ C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\MollaFu
 C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\MollaFuelCarService\obj\Debug\MollaFuelCarService.csproj.CopyComplete
 C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\MollaFuelCarService\obj\Debug\MollaFuelCarService.dll
 C:\Users\dhruv\Desktop\dotnetv2\mcfs\ASP.NET-Project\MollaFuelCarService\MollaFuelCarService\obj\Debug\MollaFuelCarService.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\MollaFuelCarService\bin\System.Web.Cors.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\MollaFuelCarService\bin\System.Web.Http.Cors.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\MollaFuelCarService\bin\System.Web.Http.Cors.xml
