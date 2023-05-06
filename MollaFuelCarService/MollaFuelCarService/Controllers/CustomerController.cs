@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs.CustomerDTOs;
 using BLL.Services.CustomerServices;
+using BLL.Services.DeliveryManServices;
 using DAL.Models;
 using MollaFuelCarService.Authenticate;
 using System;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Mail;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -149,6 +151,5 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
-
     }
 }
