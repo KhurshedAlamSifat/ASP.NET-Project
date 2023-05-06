@@ -9,6 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using BLL.DTOs.ServiceManDTOs;
+using BLL.Services.DeliveryManServices;
 
 namespace MollaFuelCarService.Controllers
 {
@@ -168,6 +169,22 @@ namespace MollaFuelCarService.Controllers
             try
             {
                 var data = ServiceManHistoryService.Delete(Id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+
+        [HttpGet]
+        [Route("api/serviceman/count")]
+        public HttpResponseMessage ServiceManCount()
+        {
+            try
+            {
+                var data = ServiceManService.Get().Count;
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

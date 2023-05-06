@@ -33,7 +33,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpGet]
-        [Route("api/admin/{id}")]
+        [Route("api/admins/{id}")]
         public HttpResponseMessage Admin(int id)
         {
             try
@@ -48,7 +48,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
         [HttpPost]
-        [Route("api/admin/add")]
+        [Route("api/admins/add")]
         public HttpResponseMessage ADD_Admin(AdminDTO admin)
         {
             try
@@ -63,7 +63,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpPost]
-        [Route("api/admin/{id}/update")]
+        [Route("api/admins/{id}/update")]
         public HttpResponseMessage Update_Admin(Admin admin)
         {
             try
@@ -78,7 +78,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpPost]
-        [Route("api/admin/{id}/delete")]
+        [Route("api/admins/{id}/delete")]
         public HttpResponseMessage Delete_Admin(int id)
         {
             try
@@ -94,7 +94,7 @@ namespace MollaFuelCarService.Controllers
 
         [Logged]
         [HttpGet]
-        [Route("api/admin/product")]
+        [Route("api/admins/product")]
         public HttpResponseMessage Product()
         {
             try
@@ -109,7 +109,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpGet]
-        [Route("api/product/{id}")]
+        [Route("api/products/{id}")]
         public HttpResponseMessage GetProduct(int Proid)
         {
             try
@@ -125,7 +125,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpPost]
-        [Route("api/product/add")]
+        [Route("api/products/add")]
         public HttpResponseMessage InsertProduct(Product product)
         {
             try
@@ -140,7 +140,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpPost]
-        [Route("api/product/{id}/UpdateProduct")]
+        [Route("api/products/{id}/UpdateProduct")]
         public HttpResponseMessage UpdateProduct(Product product)
         {
             try
@@ -155,7 +155,7 @@ namespace MollaFuelCarService.Controllers
         }
         [Logged]
         [HttpPost]
-        [Route("api/product/{id}/DeleteProduct")]
+        [Route("api/products/{id}/DeleteProduct")]
         public HttpResponseMessage DeleteProduct(int product)
         {
             try

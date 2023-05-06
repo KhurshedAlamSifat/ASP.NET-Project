@@ -5,6 +5,7 @@ using DAL.Models;
 using MollaFuelCarService.Authenticate;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -144,6 +145,21 @@ namespace MollaFuelCarService.Controllers
             try
             {
                 var data = CustomerService.OrderDelete(username);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("api/customers/count")]
+        public HttpResponseMessage CustomersCount()
+        {
+            try
+            {
+                var data = CustomerService.Get().Count;
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

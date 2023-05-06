@@ -15,7 +15,7 @@ namespace MollaFuelCarService.Controllers
     public class DeliveryManController : ApiController
     {
         [HttpGet]
-        [Route("api/DeliveryMans")]
+        [Route("api/deliverymans")]
         public HttpResponseMessage DeliveryMans()
         {
             try
@@ -33,7 +33,7 @@ namespace MollaFuelCarService.Controllers
 
         //[Logged]
         [HttpGet]
-        [Route("api/DeliveryMans/{Username}")]
+        [Route("api/deliverymans/{Username}")]
         public HttpResponseMessage DeliveryMans(string Username)
         {
             try
@@ -48,7 +48,7 @@ namespace MollaFuelCarService.Controllers
         }
         //--------------------------
         [HttpPost]
-        [Route("api/DeliveryMans/add")]
+        [Route("api/deliverymans/add")]
         public HttpResponseMessage DeliveryMansAdd(DeliveryManDTO deliveryMan)
         {
             try
@@ -63,7 +63,7 @@ namespace MollaFuelCarService.Controllers
         }
         //----------------------------
         [HttpPost]
-        [Route("api/DeliveryMans/{Username}/update")]
+        [Route("api/deliverymans/{Username}/update")]
         public HttpResponseMessage DeliveryMansUpdate(DeliveryMan deliveryMan)
         {
             try
@@ -78,12 +78,27 @@ namespace MollaFuelCarService.Controllers
         }
         //---------------------------------
         [HttpPost]
-        [Route("api/DeliveryMans/{Username}/delete")]
+        [Route("api/deliverymans/{Username}/delete")]
         public HttpResponseMessage DeliveryMansDelete(string Username)
         {
             try
             {
                 var data = DeliveryManServices.Delete(Username);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("api/deliverymans/count")]
+        public HttpResponseMessage DeliveryManCount()
+        {
+            try
+            {
+                var data = DeliveryManServices.Get().Count;
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
