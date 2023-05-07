@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,14 @@ namespace DAL.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime? Expired { get; set; }
+        /* [Required]
+         public string Username { get; set; }
+
+         public virtual User User { get; set; }*/
         [Required]
-        public string Username { get; set; }    
+        [ForeignKey("User")]
+        public string Username { get; set; }
+
+        public virtual User User { get; set; }  
     }
 }

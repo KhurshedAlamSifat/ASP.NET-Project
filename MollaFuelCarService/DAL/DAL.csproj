@@ -92,6 +92,18 @@
     <Compile Include="Migrations\202305041952486_someedit.designer.cs">
       <DependentUpon>202305041952486_someedit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305072000013_AllnewUpdate.cs" />
+    <Compile Include="Migrations\202305072000013_AllnewUpdate.designer.cs">
+      <DependentUpon>202305072000013_AllnewUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305072137196_updat3764.cs" />
+    <Compile Include="Migrations\202305072137196_updat3764.designer.cs">
+      <DependentUpon>202305072137196_updat3764.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305072148526_updat37.cs" />
+    <Compile Include="Migrations\202305072148526_updat37.designer.cs">
+      <DependentUpon>202305072148526_updat37.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -152,6 +164,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305041952486_someedit.resx">
       <DependentUpon>202305041952486_someedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305072000013_AllnewUpdate.resx">
+      <DependentUpon>202305072000013_AllnewUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305072137196_updat3764.resx">
+      <DependentUpon>202305072137196_updat3764.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305072148526_updat37.resx">
+      <DependentUpon>202305072148526_updat37.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

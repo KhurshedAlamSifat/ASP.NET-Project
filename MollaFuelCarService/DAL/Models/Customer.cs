@@ -39,5 +39,9 @@ namespace DAL.Models
             Orders = new List<Order> ();
         }
 
+        public static implicit operator string(Customer v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

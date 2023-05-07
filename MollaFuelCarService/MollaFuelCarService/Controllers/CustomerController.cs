@@ -33,7 +33,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
-        [Logged]
+        [CustomerLogged]
         [HttpGet]
         [Route("api/customers/{username}")]
         public HttpResponseMessage Customers( string username)
@@ -167,5 +167,6 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
+
     }
 }

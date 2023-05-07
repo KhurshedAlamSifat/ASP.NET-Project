@@ -13,5 +13,7 @@ namespace BLL.DTOs.CustomerDTOs
         public DateTime CreatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
         public string Username { get; set; }
+
+        public virtual UserDTO User { get; set; }
     }
 }
