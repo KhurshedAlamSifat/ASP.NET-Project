@@ -126,26 +126,23 @@
         }
 
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script>
-        var app = angular.module("my-app",[]);
-    </script>
+    
 </head>
 <body ng-app="my-app">
     <div class="container">
-        <div class="section1">
+        <div class="section1" ng-controller="loginCtrl">
             <h1>Log in</h1>
             <h5>Welcome to our - Molla Fuel and Car Service</h5>
-            <form action="" method="get">
+            <form ng-submit="login()">
                 <div class="formGroup">
-                    <p><label for="email">Email</label></p>
-                    <input type="email" id="email" name="email" required >
+                    <p><label for="username">Username</label></p>
+                    <input type="text" ng-model="l.Username" required >
                 </div>
                 <div class="formGroup">
-                    <p><label for="userNmae">Password</label></p>
-                    <input type="password" id="password" required >
+                    <p><label for="password">Password</label></p>
+                    <input type="password" ng-model="l.Password" required >
                 </div >
-                <button type="button" id="btn">login</button>
+                <input type="submit" id="btn" value="Login">
                 <p>Not a register user? <a href="signup.html">Sign Up</a></p>
             </form>           
         </div>
@@ -154,4 +151,29 @@
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("my-app",[]);
+
+        
+		
+		app.controller('loginCtrl',function($scope,$http){
+			$scope.login=function(){
+				var v = $scope.l;
+				$http.post("https://localhost:44358/api/login",v).then(function(resp){
+					localStorage.setItem("tkey",resp.data.TKey);
+					localStorage.setItem("user",resp.data.Username);
+                    localStorage.setItem("usertype",resp.data.UserType);
+
+					console.log(localStorage.getItem("user"));
+                    console.log(localStorage.getItem("usertype"));
+                    window.location.href = "Customer/View/dashboard.html"
+				},function(err){
+				 debugger;
+				});
+				
+				
+			};
+		});
+    </script>
 </html>
