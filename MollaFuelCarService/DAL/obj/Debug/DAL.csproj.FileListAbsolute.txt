@@ -80,8 +80,6 @@ E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CoreComp
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.AllTableAdded.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\mosta\OneDrive\Desktop\test2\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll.config
 C:\Users\mosta\OneDrive\Desktop\test2\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll
 C:\Users\mosta\OneDrive\Desktop\test2\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.pdb
@@ -121,14 +119,5 @@ E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm2.
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
 E:\DOT_net\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm2.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm3.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm4.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.sm5.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.Picture.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.RemovePicture.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.someedit.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.AllnewUpdate.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.updat3764.resources
-C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.updat37.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.UpdateAllTables.resources
+C:\Users\Khurshed Alam Sifat\Desktop\ASP.NET-Project\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

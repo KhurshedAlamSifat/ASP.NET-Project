@@ -1,7 +1,6 @@
 ﻿using BLL.Services.CustomerServices;
 using BLL.Services.ServiceManServices;
 using BLL.Services.ServiceManHistoryServices;
-using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,11 +60,11 @@ namespace MollaFuelCarService.Controllers
         }
         [HttpPost]
         [Route("api/serviceman/{username}/update")]
-        public HttpResponseMessage ServiceMansUpdate(ServiceMan Username)
+        public HttpResponseMessage ServiceMansUpdate(ServiceManDTO Username)
         {
             try
             {
-                var data = ServiceManService.Update(Username);
+                var data = ServiceManService.Updated(Username);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

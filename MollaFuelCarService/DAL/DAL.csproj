@@ -56,53 +56,9 @@
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="MFCSContext.cs" />
-    <Compile Include="Migrations\202305021611579_AllTableAdded.cs" />
-    <Compile Include="Migrations\202305021611579_AllTableAdded.designer.cs">
-      <DependentUpon>202305021611579_AllTableAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305022126353_sm.cs" />
-    <Compile Include="Migrations\202305022126353_sm.designer.cs">
-      <DependentUpon>202305022126353_sm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305022129240_sm2.cs" />
-    <Compile Include="Migrations\202305022129240_sm2.designer.cs">
-      <DependentUpon>202305022129240_sm2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305030329390_sm3.cs" />
-    <Compile Include="Migrations\202305030329390_sm3.designer.cs">
-      <DependentUpon>202305030329390_sm3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305030334087_sm4.cs" />
-    <Compile Include="Migrations\202305030334087_sm4.designer.cs">
-      <DependentUpon>202305030334087_sm4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305030430089_sm5.cs" />
-    <Compile Include="Migrations\202305030430089_sm5.designer.cs">
-      <DependentUpon>202305030430089_sm5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305041358219_Picture.cs" />
-    <Compile Include="Migrations\202305041358219_Picture.designer.cs">
-      <DependentUpon>202305041358219_Picture.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305041442335_RemovePicture.cs" />
-    <Compile Include="Migrations\202305041442335_RemovePicture.designer.cs">
-      <DependentUpon>202305041442335_RemovePicture.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305041952486_someedit.cs" />
-    <Compile Include="Migrations\202305041952486_someedit.designer.cs">
-      <DependentUpon>202305041952486_someedit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305072000013_AllnewUpdate.cs" />
-    <Compile Include="Migrations\202305072000013_AllnewUpdate.designer.cs">
-      <DependentUpon>202305072000013_AllnewUpdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305072137196_updat3764.cs" />
-    <Compile Include="Migrations\202305072137196_updat3764.designer.cs">
-      <DependentUpon>202305072137196_updat3764.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202305072148526_updat37.cs" />
-    <Compile Include="Migrations\202305072148526_updat37.designer.cs">
-      <DependentUpon>202305072148526_updat37.cs</DependentUpon>
+    <Compile Include="Migrations\202305140656191_UpdateAllTables.cs" />
+    <Compile Include="Migrations\202305140656191_UpdateAllTables.designer.cs">
+      <DependentUpon>202305140656191_UpdateAllTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -121,7 +77,6 @@
     <Compile Include="Repos\AdminRepos\AdminRepo.cs" />
     <Compile Include="Repos\AdminRepos\DeliveryManRepocs.cs" />
     <Compile Include="Repos\AdminRepos\ProductRepo.cs" />
-    <Compile Include="Repos\AdminRepos\ServiceManRepo.cs" />
     <Compile Include="Repos\CustomerRepos\CustomerRepo.cs" />
     <Compile Include="Repos\CustomerRepos\FuelOrderRepo.cs" />
     <Compile Include="Repos\CustomerRepos\OrderRepo.cs" />
@@ -138,41 +93,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305021611579_AllTableAdded.resx">
-      <DependentUpon>202305021611579_AllTableAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305022126353_sm.resx">
-      <DependentUpon>202305022126353_sm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305022129240_sm2.resx">
-      <DependentUpon>202305022129240_sm2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305030329390_sm3.resx">
-      <DependentUpon>202305030329390_sm3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305030334087_sm4.resx">
-      <DependentUpon>202305030334087_sm4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305030430089_sm5.resx">
-      <DependentUpon>202305030430089_sm5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305041358219_Picture.resx">
-      <DependentUpon>202305041358219_Picture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305041442335_RemovePicture.resx">
-      <DependentUpon>202305041442335_RemovePicture.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305041952486_someedit.resx">
-      <DependentUpon>202305041952486_someedit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305072000013_AllnewUpdate.resx">
-      <DependentUpon>202305072000013_AllnewUpdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305072137196_updat3764.resx">
-      <DependentUpon>202305072137196_updat3764.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202305072148526_updat37.resx">
-      <DependentUpon>202305072148526_updat37.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305140656191_UpdateAllTables.resx">
+      <DependentUpon>202305140656191_UpdateAllTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

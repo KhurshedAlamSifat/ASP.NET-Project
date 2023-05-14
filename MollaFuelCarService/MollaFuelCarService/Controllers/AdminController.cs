@@ -1,7 +1,6 @@
 ﻿using BLL.DTOs.AdminDTOs;
 using BLL.Services.AdminServices;
 
-using DAL.Models;
 using MollaFuelCarService.Authenticate;
 using System;
 using System.Collections.Generic;
@@ -64,12 +63,11 @@ namespace MollaFuelCarService.Controllers
         [Logged]
         [HttpPost]
         [Route("api/admins/{id}/update")]
-        public HttpResponseMessage Update_Admin(Admin admin)
+        public HttpResponseMessage Update_Admin(AdminDTO admin)
         {
             try
             {
-                var data = AdminService.Update(admin);
-                return Request.CreateResponse(HttpStatusCode.OK, data);
+                var data = AdminService.Updated(admin); return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
             {
@@ -126,7 +124,7 @@ namespace MollaFuelCarService.Controllers
         [Logged]
         [HttpPost]
         [Route("api/products/add")]
-        public HttpResponseMessage InsertProduct(Product product)
+        public HttpResponseMessage InsertProduct(ProductDTO product)
         {
             try
             {
@@ -141,7 +139,7 @@ namespace MollaFuelCarService.Controllers
         [Logged]
         [HttpPost]
         [Route("api/products/{id}/UpdateProduct")]
-        public HttpResponseMessage UpdateProduct(Product product)
+        public HttpResponseMessage UpdateProduct(ProductDTO product)
         {
             try
             {

@@ -55,16 +55,20 @@ namespace BLL.Services.DeliveryManServices
             return deliveryman;
         }
         //-----------------------
-        public static DeliveryManDTO Update(DeliveryMan deliveryMan)
+        public static DeliveryManDTO Update(DeliveryManDTO deliveryman)
         {
-            var data = DataAccessFactory.N_DeliveryManData().Update(deliveryMan);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<DeliveryMan, DeliveryManDTO>();
+                c.CreateMap<DeliveryManDTO, DeliveryMan>();
+                c.CreateMap<DeliveryManDTO, User>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<DeliveryManDTO>(data);
-            return mapped;
+            var users = mapper.Map<User>(deliveryman);
+            users.UserType = "DeliveryMan";
+            DataAccessFactory.UserData().Update(users);
+            var delivers = mapper.Map<DeliveryMan>(deliveryman);
+            DataAccessFactory.N_DeliveryManData().Update(delivers);
+            return deliveryman;
         }
         //----------------------
         public static bool Delete(string username)

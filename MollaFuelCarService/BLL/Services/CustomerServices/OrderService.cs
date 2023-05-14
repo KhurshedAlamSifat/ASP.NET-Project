@@ -35,27 +35,27 @@ namespace BLL.Services.CustomerServices
             return mapped;
         }
 
-        public static OrderDTO Insert(Order order)
+        public static OrderDTO Insert(OrderDTO order)
         {
-            var data = DataAccessFactory.OrderData().Create(order);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Order, OrderDTO>();
+                c.CreateMap<OrderDTO, Order>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<OrderDTO>(data);
-            return mapped;
+            var mapped = mapper.Map<Order>(order);
+            DataAccessFactory.OrderData().Create(mapped);
+            return order;
         }
-        public static OrderDTO Update(Order order)
+        public static OrderDTO Update(OrderDTO order)
         {
-            var data = DataAccessFactory.OrderData().Update(order);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Order, OrderDTO>();
+                c.CreateMap<OrderDTO, Order>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<OrderDTO>(data);
-            return mapped;
+            var mapped = mapper.Map<Order>(order);
+            DataAccessFactory.OrderData().Update(mapped);
+            return order;
         }
 
         public static bool Delete(int id)

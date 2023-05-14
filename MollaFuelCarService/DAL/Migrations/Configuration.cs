@@ -5,7 +5,6 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-
     internal sealed class Configuration : DbMigrationsConfiguration<DAL.MFCSContext>
     {
         public Configuration()
@@ -22,6 +21,7 @@
 
             Random random = new Random();
 
+            //Seed for Admin Table
             for (int i = 1; i <= 5; i++)
             {
 
@@ -147,4 +147,3 @@
         }
     }
 }
-

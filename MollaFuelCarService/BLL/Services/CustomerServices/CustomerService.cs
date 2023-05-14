@@ -62,6 +62,7 @@ namespace BLL.Services.CustomerServices
             });
             var mapper = new Mapper(cfg);
             var users = mapper.Map<User>(customer);
+            users.UserType = "Customer";
             DataAccessFactory.UserData().Update(users);
             var customers = mapper.Map<Customer>(customer);
             DataAccessFactory.CustomerData().Update(customers);

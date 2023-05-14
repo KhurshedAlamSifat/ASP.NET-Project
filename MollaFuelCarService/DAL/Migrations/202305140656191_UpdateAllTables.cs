@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class AllTableAdded : DbMigration
+    public partial class UpdateAllTables : DbMigration
     {
         public override void Up()
         {
@@ -131,6 +131,28 @@
                 .PrimaryKey(t => t.Username);
             
             CreateTable(
+                "dbo.ServiceManHistories",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Product = c.String(nullable: false, maxLength: 20),
+                        SupplierName = c.String(nullable: false, maxLength: 20),
+                        Quantity = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.ServiceManOrderlists",
+                c => new
+                    {
+                        OrderId = c.Int(nullable: false, identity: true),
+                        OrderFor = c.String(nullable: false, maxLength: 20),
+                        OrderTime = c.DateTime(nullable: false),
+                        Quantity = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.OrderId);
+            
+            CreateTable(
                 "dbo.Tokens",
                 c => new
                     {
@@ -138,31 +160,34 @@
                         TKey = c.String(nullable: false, maxLength: 100),
                         CreatedAt = c.DateTime(nullable: false),
                         Expired = c.DateTime(),
-                        Username = c.String(nullable: false),
+                        Username = c.String(nullable: false, maxLength: 128),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Users", t => t.Username, cascadeDelete: true)
+                .Index(t => t.Username);
             
             CreateTable(
                 "dbo.Users",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
-                        Username = c.String(),
+                        Username = c.String(nullable: false, maxLength: 128),
                         Password = c.String(),
                         UserType = c.String(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Username);
             
         }
         
         public override void Down()
         {
+            DropForeignKey("dbo.Tokens", "Username", "dbo.Users");
             DropForeignKey("dbo.Orders", "ServicedBy", "dbo.ServiceMen");
             DropForeignKey("dbo.ProductOrders", "ProductId", "dbo.Products");
             DropForeignKey("dbo.ProductOrders", "OrderId", "dbo.Orders");
             DropForeignKey("dbo.Orders", "OrderedBy", "dbo.Customers");
             DropForeignKey("dbo.FuelOrders", "DeliveredBy", "dbo.DeliveryMen");
             DropForeignKey("dbo.FuelOrders", "OrderedBy", "dbo.Customers");
+            DropIndex("dbo.Tokens", new[] { "Username" });
             DropIndex("dbo.ProductOrders", new[] { "OrderId" });
             DropIndex("dbo.ProductOrders", new[] { "ProductId" });
             DropIndex("dbo.Orders", new[] { "ServicedBy" });
@@ -171,6 +196,8 @@
             DropIndex("dbo.FuelOrders", new[] { "OrderedBy" });
             DropTable("dbo.Users");
             DropTable("dbo.Tokens");
+            DropTable("dbo.ServiceManOrderlists");
+            DropTable("dbo.ServiceManHistories");
             DropTable("dbo.ServiceMen");
             DropTable("dbo.Products");
             DropTable("dbo.ProductOrders");

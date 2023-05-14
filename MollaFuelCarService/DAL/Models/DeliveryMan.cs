@@ -35,6 +35,5 @@ namespace DAL.Models
         {
             FuelOrders = new List<FuelOrder>();
         }
-
     }
 }

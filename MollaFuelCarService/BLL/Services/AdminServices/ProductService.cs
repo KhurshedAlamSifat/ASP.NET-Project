@@ -38,27 +38,27 @@ namespace BLL.Services.AdminServices
             return mapped;
         }
 
-        public static ProductDTO InsertProduct(Product product)
+        public static ProductDTO InsertProduct(ProductDTO product)
         {
-            var data = DataAccessFactory.N_ProductData().Create(product);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Product, ProductDTO>();
+                c.CreateMap<ProductDTO, Product>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductDTO>(data);
-            return mapped;
+            var mapped = mapper.Map<Product>(product);
+            DataAccessFactory.N_ProductData().Create(mapped);
+            return product;
         }
-        public static ProductDTO Update(Product product)
+        public static ProductDTO Update(ProductDTO product)
         {
-            var data = DataAccessFactory.N_ProductData().Update(product);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Product, ProductDTO>();
+                c.CreateMap<ProductDTO, Product>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductDTO>(data);
-            return mapped;
+            var mapped = mapper.Map<Product>(product);
+            DataAccessFactory.N_ProductData().Update(mapped);
+            return product;
         }
 
         public static bool DeleteProduct(int id)

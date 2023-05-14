@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Repos;
+using DAL.Repos.ServiceManRepo;
 
 namespace DAL
 {

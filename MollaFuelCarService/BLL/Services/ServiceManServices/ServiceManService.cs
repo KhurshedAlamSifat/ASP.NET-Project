@@ -52,16 +52,20 @@ namespace BLL.Services.ServiceManServices
             DataAccessFactory.ServiceManData().Create(servicemans);
             return serviceman;
         }
-        public static ServiceManDTO Update(ServiceMan serviceman)
+        public static ServiceManDTO Updated(ServiceManDTO serviceman)
         {
-            var data = DataAccessFactory.ServiceManData().Update(serviceman);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<ServiceMan, ServiceManDTO>();
+                c.CreateMap<ServiceManDTO, ServiceMan>();
+                c.CreateMap<ServiceManDTO, User>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ServiceManDTO>(data);
-            return mapped;
+            var users = mapper.Map<User>(serviceman);
+            users.UserType = "ServiceMan";
+            DataAccessFactory.UserData().Update(users);
+            var servicemans = mapper.Map<ServiceMan>(serviceman);
+            DataAccessFactory.ServiceManData().Update(servicemans);
+            return serviceman;
         }
 
         public static bool Delete(string username)

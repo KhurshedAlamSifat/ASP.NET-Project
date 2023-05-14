@@ -54,7 +54,7 @@ namespace BLL.Services.CustomerServices
             });
             var mapper = new Mapper(cfg);
             var mapped = mapper.Map<FuelOrder>(fuelorder);
-            DataAccessFactory.FuelOrderData().Create(mapped);
+            DataAccessFactory.FuelOrderData().Update(mapped);
             return fuelorder;
         }
 
