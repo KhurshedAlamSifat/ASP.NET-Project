@@ -53,16 +53,19 @@ namespace BLL.Services.CustomerServices
             DataAccessFactory.CustomerData().Create(customers);
             return customer;
         }
-        public static CustomerDTO Update(Customer customer)
+        public static CustomerDTO Update(CustomerDTO customer)
         {
-            var data = DataAccessFactory.CustomerData().Update(customer);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<Customer, CustomerDTO>();
+                c.CreateMap<CustomerDTO, Customer>();
+                c.CreateMap<CustomerDTO, User>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<CustomerDTO>(data);
-            return mapped;
+            var users = mapper.Map<User>(customer);
+            DataAccessFactory.UserData().Update(users);
+            var customers = mapper.Map<Customer>(customer);
+            DataAccessFactory.CustomerData().Update(customers);
+            return customer;
         }
 
         public static bool Delete(string username)

@@ -1,7 +1,5 @@
 ﻿using BLL.DTOs.CustomerDTOs;
 using BLL.Services.CustomerServices;
-using BLL.Services.DeliveryManServices;
-using DAL.Models;
 using MollaFuelCarService.Authenticate;
 using System;
 using System.Collections.Generic;
@@ -91,7 +89,7 @@ namespace MollaFuelCarService.Controllers
         }
         [HttpPost]
         [Route("api/customers/{username}/update")]
-        public HttpResponseMessage CustomersUpdate(Customer username)
+        public HttpResponseMessage CustomersUpdate(CustomerDTO username)
         {
             try
             {

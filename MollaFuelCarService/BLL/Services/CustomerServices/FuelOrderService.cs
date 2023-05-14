@@ -35,27 +35,27 @@ namespace BLL.Services.CustomerServices
             return mapped;
         }
 
-        public static FuelOrderDTO Insert(FuelOrder fuelorder)
+        public static FuelOrderDTO Insert(FuelOrderDTO fuelorder)
         {
-            var data = DataAccessFactory.FuelOrderData().Create(fuelorder);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<FuelOrder, FuelOrderDTO>();
+                c.CreateMap<FuelOrderDTO, FuelOrder>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<FuelOrderDTO>(data);
-            return mapped;
+            var mapped = mapper.Map<FuelOrder>(fuelorder);
+            DataAccessFactory.FuelOrderData().Create(mapped);
+            return fuelorder;
         }
-        public static FuelOrderDTO Update(FuelOrder fuelorder)
+        public static FuelOrderDTO Update(FuelOrderDTO fuelorder)
         {
-            var data = DataAccessFactory.FuelOrderData().Update(fuelorder);
             var cfg = new MapperConfiguration(c =>
             {
-                c.CreateMap<FuelOrder, FuelOrderDTO>();
+                c.CreateMap<FuelOrderDTO, FuelOrder>();
             });
             var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<FuelOrderDTO>(data);
-            return mapped;
+            var mapped = mapper.Map<FuelOrder>(fuelorder);
+            DataAccessFactory.FuelOrderData().Create(mapped);
+            return fuelorder;
         }
 
         public static bool Delete(int id)
