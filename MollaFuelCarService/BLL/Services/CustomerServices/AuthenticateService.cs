@@ -14,11 +14,14 @@ namespace BLL.Services.CustomerServices
     {
         public static TokenDTO Authenticate(string username, string password)
         {
+
             var res = DataAccessFactory.AuthData().Authenticate(username, password);
             if (res)
             {
+                var usertype= DataAccessFactory.UserData().Read(username).UserType;
                 var token = new Token();
                 token.Username = username;
+                token.UserType= usertype;
                 token.CreatedAt = DateTime.Now;
                 token.TKey= Guid.NewGuid().ToString();
                 var ret = DataAccessFactory.TokenData().Create(token);

@@ -60,6 +60,10 @@
     <Compile Include="Migrations\202305140656191_UpdateAllTables.designer.cs">
       <DependentUpon>202305140656191_UpdateAllTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305141732319_UpdateTokenTable.cs" />
+    <Compile Include="Migrations\202305141732319_UpdateTokenTable.designer.cs">
+      <DependentUpon>202305141732319_UpdateTokenTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -95,6 +99,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305140656191_UpdateAllTables.resx">
       <DependentUpon>202305140656191_UpdateAllTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305141732319_UpdateTokenTable.resx">
+      <DependentUpon>202305141732319_UpdateTokenTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

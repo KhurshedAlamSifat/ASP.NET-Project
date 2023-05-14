@@ -23,6 +23,8 @@ namespace DAL.Models
         [ForeignKey("User")]
         public string Username { get; set; }
 
+        public string UserType { get; set; }
+
         public virtual User User { get; set; }  
     }
 }

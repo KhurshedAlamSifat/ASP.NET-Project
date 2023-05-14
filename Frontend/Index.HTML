@@ -77,6 +77,13 @@
       text-transform: uppercase;
       margin: 0;
     }
+    .intro h3 {
+      font-family: sans-serif;
+      font-size: 35px;
+      color: #128b66;
+      font-weight: bold;
+      margin: 0;
+    }
 
     .intro p {
       font-size: 20px;
@@ -147,7 +154,7 @@
   </style>
 </head>
 
-<body>
+<body ng-app="my-app">
     <header class="header">
             <a href="#" class="logo"><img src="Images/mollafuel.png" alt=""></a>
             <nav class="nav-items">
@@ -163,6 +170,7 @@
         <div class="intro">
             <h1>A Fuel Deliver and </h1><h1>Car Service community</h1>
             <p>No more waiting in line at the gas station – just sit back and let us handle it!</p>
+            <h3 ng-controller="CountCtrl">Total Users: {{count}} </h3>
             <button>Lets Start</button>
         </div>
         
@@ -185,5 +193,20 @@
         </div>
     </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+  var app = angular.module("my-app",[]);
+  app.controller('CountCtrl',function($scope,$http)
+  {
+		$http.get("https://localhost:44358/api/customers/count").then(function(resp){
+		debugger;
+			$scope.count = resp.data;
+		},
+		function(err){
+		debugger;
+		});
+	});
+</script>
 
 </html>
