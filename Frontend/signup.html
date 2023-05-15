@@ -126,30 +126,33 @@
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("my-app",[]);
+    </script>
     
 </head>
 <body ng-app="my-app">
     <div class="container">
-        <div class="section1" ng-controller="SignupCtrl">
+        <div class="section1">
             <h1>Sign up</h1>
             <h5>please signup for connecting with us</h5>
-            <form ng-submit="Signup()">
+            <form action="" method="get">
                 <div class="formGroup">
                     <p><label>Name</label></p>
-                    <input type="text" ng-model="s.Name" required >
+                    <input type="text"  required >
                 </div>
                 <div class="formGroup">
                     <p><label for="email">Username</label></p>
-                    <input type="text" ng-model="s.Username" required >
+                    <input type="text" required >
                 </div>
                 <div class="formGroup">
                     <p><label for="email">Email</label></p>
-                    <input type="email" ng-model="s.Email" required >
+                    <input type="email"  required >
                 </div>
                 <div class="formGroup">
                     <p><label for="email">Gender</label></p>
-                    <select name="Gender" id="cars" ng-model="s.Gender">
-                        <option disabled >Select Gender</option>
+                    <select name="Gender" id="cars">
+                        <option disabled>Select Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Others">Others</option>
@@ -157,21 +160,21 @@
                 </div>
                 <div class="formGroup">
                     <p><label>Date of birth</label></p>
-                    <input type="date" ng-model="s.Dob" required >
+                    <input type="date" required >
                 </div >
                 <div class="formGroup">
                     <p><label>Phone no</label></p>
-                    <input type="number" ng-model="s.Phone" required >
+                    <input type="number" required >
                 </div >
                 <div class="formGroup">
                     <p><label>Location</label></p>
-                    <input type="text" ng-model="s.Location" required >
+                    <input type="text" required >
                 </div >
                 <div class="formGroup">
                     <p><label for="userNmae">Password</label></p>
-                    <input type="password" id="password" ng-model="s.Password" required >
+                    <input type="password" id="password" required >
                 </div >
-                <input type="submit" id="btn" value="SignUp">
+                <button type="button" id="btn">SignUp</button>
                 <p>want you go back? <a href="login.html">back</a></p>
             </form>           
         </div>
@@ -180,21 +183,4 @@
         </div>
     </div>
 </body>
-
-<script>
-    var app = angular.module("my-app",[]);
-
-    app.controller('SignupCtrl', function($scope,$http){
-        $scope.Signup=function(){
-            var v = $scope.s;
-            $http.post("https://localhost:44358/api/customers/add",v).then(function(resp){
-                alert("Successfully Done your Signup");
-                window.location.href = "login.html";
-            },function(err){
-                alert("SignUp Failed!");
-            });
-        };
-    });
-</script>
-
 </html>
