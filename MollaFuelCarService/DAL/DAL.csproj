@@ -56,9 +56,9 @@
     <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="MFCSContext.cs" />
-    <Compile Include="Migrations\202305150957210_admin_partModified.cs" />
-    <Compile Include="Migrations\202305150957210_admin_partModified.designer.cs">
-      <DependentUpon>202305150957210_admin_partModified.cs</DependentUpon>
+    <Compile Include="Migrations\202305151351404_updatetables.cs" />
+    <Compile Include="Migrations\202305151351404_updatetables.designer.cs">
+      <DependentUpon>202305151351404_updatetables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -97,8 +97,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305150957210_admin_partModified.resx">
-      <DependentUpon>202305150957210_admin_partModified.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305151351404_updatetables.resx">
+      <DependentUpon>202305151351404_updatetables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

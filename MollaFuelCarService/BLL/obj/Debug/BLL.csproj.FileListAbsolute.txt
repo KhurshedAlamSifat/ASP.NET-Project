@@ -136,3 +136,17 @@ E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.cspr
 E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.CopyComplete
 E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.dll
 E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\BLL.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\BLL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\DAL.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\DAL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\DAL.dll.config
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.dll
+C:\Users\Khurshed Alam Sifat\Desktop\ProjectBackend\ASP.NET-Project\MollaFuelCarService\BLL\obj\Debug\BLL.pdb

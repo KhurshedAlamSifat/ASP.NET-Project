@@ -19,7 +19,6 @@ namespace MollaFuelCarService.Controllers
     {
         
         [EnableCors("*", "*", "*")]
-        [Logged]
         [HttpGet]
         [Route("api/admins")]
         public HttpResponseMessage Admins()

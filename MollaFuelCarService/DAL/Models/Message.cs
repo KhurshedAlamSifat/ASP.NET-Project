@@ -11,11 +11,7 @@ namespace DAL.Models
     {
            [Key]
            public int MsgID { get; set; }   
-           public string Message_from
-                {
-                   get; 
-                   set;
-                 }
+           public string Message_from { get; set; }
            public string Messages { get; set; }
     }
 }
