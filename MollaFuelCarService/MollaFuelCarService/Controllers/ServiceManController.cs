@@ -10,9 +10,11 @@ using System.Web.Http;
 using BLL.DTOs.ServiceManDTOs;
 using BLL.Services.DeliveryManServices;
 using MollaFuelCarService.Authenticate;
+using System.Web.Http.Cors;
 
 namespace MollaFuelCarService.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class ServiceManController : ApiController
     {
         [HttpGet]
