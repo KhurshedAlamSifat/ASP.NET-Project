@@ -60,6 +60,10 @@
     <Compile Include="Migrations\202305151351404_updatetables.designer.cs">
       <DependentUpon>202305151351404_updatetables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305151629575_initdb.cs" />
+    <Compile Include="Migrations\202305151629575_initdb.designer.cs">
+      <DependentUpon>202305151629575_initdb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -99,6 +103,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305151351404_updatetables.resx">
       <DependentUpon>202305151351404_updatetables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305151629575_initdb.resx">
+      <DependentUpon>202305151629575_initdb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,6 +11,7 @@ using BLL.DTOs.ServiceManDTOs;
 using BLL.Services.DeliveryManServices;
 using MollaFuelCarService.Authenticate;
 using System.Web.Http.Cors;
+using System.Net.Mail;
 
 namespace MollaFuelCarService.Controllers
 {
@@ -125,6 +126,30 @@ namespace MollaFuelCarService.Controllers
         [Route("api/orderlist/{OrderId}/delete")]
         public HttpResponseMessage OrderIdDelete(int OrderId)
         {
+            string senderEmail = "mollasfuel@gmail.com";
+            string senderPassword = "oulcgsufebduckez";
+            string recipientEmail = "dhruvtanim@gmail.com";
+            string subject = "Welcome to Our Molla Fuel And Car Service!";
+            string body = "<div style=\"font-family: Arial, sans-serif; font-size: 14px; color: #0d0d0d; font-weight: 300;\">"
+                  + "<h4>Dear " + "dear customer" + ",</h4>"
+                   + "<p>We have accepted your order.our serviceman is on the way</p>"
+                  + "<p>Thank you for choosing us.</p>"
+                  + "<h4>Best regards,</h4>"
+                  + "<h3>MOLLA FUEL AND CAR SERVICE</h3>"
+                  + "</div>";
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential(senderEmail, senderPassword),
+                EnableSsl = true,
+            };
+
+            var message = new MailMessage(senderEmail, recipientEmail, subject, body)
+            {
+                IsBodyHtml = true
+            };
+
+            smtpClient.Send(message);
             try
             {
                 var data = ServiceManOrderlistService.Delete(OrderId);
@@ -169,6 +194,30 @@ namespace MollaFuelCarService.Controllers
         [Route("api/servicehistory/{Id}/delete")]
         public HttpResponseMessage ServiceManHistorysDelete(int Id)
         {
+            string senderEmail = "mollasfuel@gmail.com";
+            string senderPassword = "oulcgsufebduckez";
+            string recipientEmail = "dhruvtanim@gmail.com";
+            string subject = "Welcome to Our Molla Fuel And Car Service!";
+            string body = "<div style=\"font-family: Arial, sans-serif; font-size: 14px; color: #0d0d0d; font-weight: 300;\">"
+                  + "<h4>Dear " + "dear customer" + ",</h4>"
+                  + "<p>We have accepted your order.our serviceman is on the way</p>"
+                  + "<p>Thank you for choosing us.</p>"
+                  + "<h4>Best regards,</h4>"
+                  + "<h3>MOLLA FUEL AND CAR SERVICE</h3>"
+                  + "</div>";
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential(senderEmail, senderPassword),
+                EnableSsl = true,
+            };
+
+            var message = new MailMessage(senderEmail, recipientEmail, subject, body)
+            {
+                IsBodyHtml = true
+            };
+
+            smtpClient.Send(message);
             try
             {
                 var data = ServiceManHistoryService.Delete(Id);
