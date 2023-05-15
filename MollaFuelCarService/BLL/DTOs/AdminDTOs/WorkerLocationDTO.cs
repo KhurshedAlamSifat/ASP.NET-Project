@@ -7,18 +7,15 @@ using System.Threading.Tasks;
 
 namespace BLL.DTOs.AdminDTOs
 {
-    public class AdminDTO
+    public  class WorkerLocationDTO
     {
-
-        public string Username { get; set; }
+        public string username { get; set; }
         [Required]
-
-        public string Name { get; set; }
+        public string password { get; set; }
+        //
         [Required]
-
-        public string Email { get; set; }
+        public double latitude { get; set; }
         [Required]
-
-        public string Password { get; set; }
+        public double longitude { get; set; }
     }
 }

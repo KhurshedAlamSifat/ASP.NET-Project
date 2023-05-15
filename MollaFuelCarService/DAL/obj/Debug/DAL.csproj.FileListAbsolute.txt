@@ -140,3 +140,17 @@ C:\Users\dhruv\Desktop\dotnet\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\D
 C:\Users\dhruv\Desktop\dotnet\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
 C:\Users\dhruv\Desktop\dotnet\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
 C:\Users\dhruv\Desktop\dotnet\mcfs\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.initdb.resources
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll.config
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.dll
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\DAL.pdb
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.dll
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.xml
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.dll
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.pdb
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.Migrations.admin_partModified.resources
+E:\DOT_NET_FINAL(GIT)\ASP.NET-Project\MollaFuelCarService\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

@@ -23,7 +23,7 @@ namespace DAL
 
         public static IRepo<User, string, User> UserData()
         {
-            return new UserRepo();  
+            return new UserRepo();
         }
 
         public static IAuth<bool> AuthData()
@@ -51,6 +51,11 @@ namespace DAL
         public static IRepo<Product, int, Product> N_ProductData() { return new ProductRepo(); }
 
         public static IRepo<DeliveryMan, string, DeliveryMan> N_DeliveryManData() { return new DeliveryManRepo(); }
+
+        public static IRepo<Message, int, Message> MessageData() { return new MessageRepo(); }
+        public static IRepo<WorkerLocationcs, double, WorkerLocationcs> LocationData() { return new WorkerLocationRepo(); }
+
+
 
         public static IRepo<ServiceMan, string, ServiceMan> ServiceManData()
         {

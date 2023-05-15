@@ -69,9 +69,9 @@ namespace BLL.Services.AdminServices
             return admin;
         }
 
-        public static bool Delete(string username)
+        public static bool Delete(string id)
         {
-            var data = DataAccessFactory.N_AdminData().Delete(username);
+            var data = DataAccessFactory.N_AdminData().Delete(id);
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<Admin, AdminDTO>();
@@ -85,66 +85,6 @@ namespace BLL.Services.AdminServices
 
 
 
-        /// product CRUD ///
-
-        public static List<ProductDTO> GetProduct()
-        {
-            var data = DataAccessFactory.N_ProductData().Read();
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Product, ProductDTO>();
-            });
-            var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<List<ProductDTO>>(data);
-            return mapped;
-        }
-
-        public static ProductDTO GetProduct(int id)
-        {
-            var data = DataAccessFactory.N_ProductData().Read(id);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Product, ProductDTO>();
-            });
-            var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductDTO>(data);
-            return mapped;
-        }
-
-        public static ProductDTO InsertProduct(Product product)
-        {
-            var data = DataAccessFactory.N_ProductData().Create(product);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Product, ProductDTO>();
-            });
-            var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductDTO>(data);
-            return mapped;
-        }
-        public static ProductDTO Update(Product product)
-        {
-            var data = DataAccessFactory.N_ProductData().Update(product);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Product, ProductDTO>();
-            });
-            var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<ProductDTO>(data);
-            return mapped;
-        }
-
-        public static bool DeleteProduct(int id)
-        {
-            var data = DataAccessFactory.N_ProductData().Delete(id);
-            var cfg = new MapperConfiguration(c =>
-            {
-                c.CreateMap<Product, ProductDTO>();
-            });
-            var mapper = new Mapper(cfg);
-            var mapped = mapper.Map<bool>(data);
-            return mapped;
-        }
 
     }
 }
