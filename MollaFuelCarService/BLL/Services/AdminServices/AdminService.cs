@@ -25,9 +25,9 @@ namespace BLL.Services.AdminServices
             return mapped;
         }
 
-        public static AdminDTO Get(int id)
+        public static AdminDTO Get(string username)
         {
-            var data = DataAccessFactory.N_AdminData().Read(id);
+            var data = DataAccessFactory.N_AdminData().Read(username);
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<Admin, AdminDTO>();
@@ -69,9 +69,9 @@ namespace BLL.Services.AdminServices
             return admin;
         }
 
-        public static bool Delete(int id)
+        public static bool Delete(string username)
         {
-            var data = DataAccessFactory.N_AdminData().Delete(id);
+            var data = DataAccessFactory.N_AdminData().Delete(username);
             var cfg = new MapperConfiguration(c =>
             {
                 c.CreateMap<Admin, AdminDTO>();

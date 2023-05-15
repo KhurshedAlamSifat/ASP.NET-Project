@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using BLL.DTOs.ServiceManDTOs;
 using BLL.Services.DeliveryManServices;
+using MollaFuelCarService.Authenticate;
 
 namespace MollaFuelCarService.Controllers
 {
@@ -29,6 +30,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
+        [Logged]
         [HttpGet]
         [Route("api/serviceman/{Username}")]
         public HttpResponseMessage ServiceMans(string Username)

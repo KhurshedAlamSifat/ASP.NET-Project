@@ -46,7 +46,7 @@ namespace DAL
             return new FuelOrderRepo();
         }
 
-        public static IRepo<Admin, int, Admin> N_AdminData() { return new AdminRepo(); }
+        public static IRepo<Admin, string, Admin> N_AdminData() { return new AdminRepo(); }
 
         public static IRepo<Product, int, Product> N_ProductData() { return new ProductRepo(); }
 

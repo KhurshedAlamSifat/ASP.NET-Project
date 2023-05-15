@@ -8,22 +8,20 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos.AdminRepos
 {
-    internal class AdminRepo : Repo, IRepo<Admin, int, Admin>
+    internal class AdminRepo : Repo, IRepo<Admin, string, Admin>
     {
         public Admin Create(Admin obj)
         {
             db.Admins.Add(obj);
             if (db.SaveChanges() > 0) return obj;
-            return null;
-
+            else return null;
         }
 
-        public bool Delete(int id)
+        public bool Delete(string id)
         {
             var ex = Read(id);
             db.Admins.Remove(ex);
             return db.SaveChanges() > 0;
-
         }
 
         public List<Admin> Read()
@@ -31,20 +29,17 @@ namespace DAL.Repos.AdminRepos
             return db.Admins.ToList();
         }
 
-        public Admin Read(int id)
+        public Admin Read(string id)
         {
             return db.Admins.Find(id);
         }
 
         public Admin Update(Admin obj)
         {
-            var ex = Read(obj.Id);
+            var ex = Read(obj.Username);
             db.Entry(ex).CurrentValues.SetValues(obj);
             if (db.SaveChanges() > 0) return obj;
-            return null;
+            else return null;
         }
-
-
-
     }
 }

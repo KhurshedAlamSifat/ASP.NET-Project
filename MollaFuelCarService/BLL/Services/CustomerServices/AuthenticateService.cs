@@ -59,42 +59,5 @@ namespace BLL.Services.CustomerServices
             }
             return false;
         }
-
-        public static bool IsAdmin(string tkey)
-        {
-            var extk = DataAccessFactory.TokenData().Read(tkey);
-            if (IsTokenValid(tkey) && extk.User.UserType.Equals("Admin"))
-            {
-                return true;
-            }
-            return false;
-        }
-        public static bool IsCustomer(string tkey)
-        {
-            var extk = DataAccessFactory.TokenData().Read(tkey);
-            if (IsTokenValid(tkey) && extk.User.UserType.Equals("Customer"))
-            {
-                return true;
-            }
-            return false;
-        }
-        public static bool IsDeliveryMan(string tkey)
-        {
-            var extk = DataAccessFactory.TokenData().Read(tkey);
-            if (IsTokenValid(tkey) && extk.User.UserType.Equals("DeliveryMan"))
-            {
-                return true;
-            }
-            return false;
-        }
-        public static bool IsServiceMan(string tkey)
-        {
-            var extk = DataAccessFactory.TokenData().Read(tkey);
-            if (IsTokenValid(tkey) && extk.User.UserType.Equals("ServiceMan"))
-            {
-                return true;
-            }
-            return false;
-        }
     }
 }

@@ -33,11 +33,11 @@ namespace MollaFuelCarService.Controllers
         [Logged]
         [HttpGet]
         [Route("api/admins/{id}")]
-        public HttpResponseMessage Admin(int id)
+        public HttpResponseMessage Admin(string username)
         {
             try
             {
-                var data = AdminService.Get(id);
+                var data = AdminService.Get(username);
 
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
@@ -77,11 +77,11 @@ namespace MollaFuelCarService.Controllers
         [Logged]
         [HttpPost]
         [Route("api/admins/{id}/delete")]
-        public HttpResponseMessage Delete_Admin(int id)
+        public HttpResponseMessage Delete_Admin(string username)
         {
             try
             {
-                var data = AdminService.Delete(id);
+                var data = AdminService.Delete(username);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

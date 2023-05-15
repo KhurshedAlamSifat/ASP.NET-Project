@@ -142,6 +142,9 @@
                     <p><label for="password">Password</label></p>
                     <input type="password" ng-model="l.Password" required >
                 </div >
+                <div class="formGroup">
+                    <p id="error"></p>
+                </div >
                 <input type="submit" id="btn" value="Login">
                 <p>Not a register user? <a href="signup.html">Sign Up</a></p>
             </form>           
@@ -163,13 +166,32 @@
 				$http.post("https://localhost:44358/api/login",v).then(function(resp){
 					localStorage.setItem("tkey",resp.data.TKey);
 					localStorage.setItem("user",resp.data.Username);
-                    localStorage.setItem("usertype",resp.data.UserType);
+                    localStorage.setItem("usertype",resp.data.UserType)
 
+                    console.log(localStorage.getItem("tkey"));
 					console.log(localStorage.getItem("user"));
                     console.log(localStorage.getItem("usertype"));
-                    window.location.href = "Customer/View/dashboard.html"
+
+                    if(localStorage.getItem("usertype")==="Customer")
+                    {
+                        window.location.href = "Customer/View/dashboard.html";
+                    }else if(localStorage.getItem("usertype")==="Admin")
+                    {
+                        window.location.href = "Admin/View/dashboard.html";
+                    }else if(localStorage.getItem("usertype")==="ServiceMan")
+                    {
+                        window.location.href = "ServiceMan/View/dashboard.html";
+                    }else if(localStorage.getItem("usertype")==="DeliveryMan")
+                    {
+                        window.location.href = "DeliveryMan/View/dashboard.html";
+                    }else{
+                        debugger;
+                    }
+                    
 				},function(err){
-				 debugger;
+                    var err = "Invalid Usernam or Password";
+                    var resultElement = document.getElementById("error");
+                    resultElement.innerHTML = err;
 				});
 				
 				

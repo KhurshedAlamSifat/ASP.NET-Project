@@ -31,7 +31,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
-        [CustomerLogged]
+        [Logged]
         [HttpGet]
         [Route("api/customers/{username}")]
         public HttpResponseMessage Customers( string username)

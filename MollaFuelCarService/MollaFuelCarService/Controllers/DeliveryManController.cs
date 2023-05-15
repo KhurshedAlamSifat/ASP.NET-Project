@@ -30,7 +30,7 @@ namespace MollaFuelCarService.Controllers
 
         //----------------------
 
-        //[Logged]
+        [Logged]
         [HttpGet]
         [Route("api/deliverymans/{Username}")]
         public HttpResponseMessage DeliveryMans(string Username)
