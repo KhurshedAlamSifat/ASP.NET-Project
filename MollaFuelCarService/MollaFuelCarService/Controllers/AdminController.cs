@@ -15,10 +15,12 @@ using System.Web.Services.Description;
 
 namespace MollaFuelCarService.Controllers
 {
+
+    [EnableCors("*", "*", "*")]
     public class AdminController : ApiController
     {
         
-        [EnableCors("*", "*", "*")]
+       
         [HttpGet]
         [Route("api/admins")]
         public HttpResponseMessage Admins()
@@ -63,7 +65,7 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
-        [Logged]
+      //  [Logged]
         [HttpPost]
         [Route("api/admins/{id}/update")]
         public HttpResponseMessage Update_Admin(AdminDTO admin)
@@ -77,7 +79,7 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
-        [Logged]
+       // [Logged]
         [HttpPost]
         [Route("api/admins/{id}/delete")]
         public HttpResponseMessage Delete_Admin(string username)
@@ -93,7 +95,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
-        [Logged]
+       // [Logged]
         [HttpGet]
         [Route("api/admins/product")]
         public HttpResponseMessage Product()
@@ -108,7 +110,7 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
-        [Logged]
+      //  [Logged]
         [HttpGet]
         [Route("api/products/{id}")]
         public HttpResponseMessage GetProduct(int Proid)
@@ -124,7 +126,7 @@ namespace MollaFuelCarService.Controllers
             }
 
         }
-       [Logged]
+      // [Logged]
         [HttpPost]
         [Route("api/products/add")]
         public HttpResponseMessage InsertProduct(ProductDTO product)
@@ -168,7 +170,7 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
-        [Logged]
+      //  [Logged]
         [HttpPost]
         [Route("api/products/{id}/UpdateProduct")]
         public HttpResponseMessage UpdateProduct(ProductDTO product)
@@ -183,7 +185,7 @@ namespace MollaFuelCarService.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
-        [Logged]
+      //  [Logged]
         [HttpPost]
         [Route("api/products/{id}/DeleteProduct")]
         public HttpResponseMessage DeleteProduct(int product)
@@ -218,7 +220,7 @@ namespace MollaFuelCarService.Controllers
             }
         }
 
-        [Logged]
+     //   [Logged]
         [HttpGet]
         [Route("api/location/{id}")]
         public HttpResponseMessage Location(double id)
