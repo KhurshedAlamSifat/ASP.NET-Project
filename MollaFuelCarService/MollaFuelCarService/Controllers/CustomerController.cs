@@ -51,32 +51,6 @@ namespace MollaFuelCarService.Controllers
         [Route("api/customers/add")]
         public HttpResponseMessage CustomersAdd(CustomerDTO customer)
         {
-            string senderEmail = "mollasfuel@gmail.com";
-            string senderPassword = "oulcgsufebduckez";
-            string recipientEmail = customer.Email;
-            string subject = "Welcome to Our Molla Fuel And Car Service!";
-            string body = "<div style=\"font-family: Arial, sans-serif; font-size: 14px; color: #0d0d0d; font-weight: 300;\">"
-                  + "<h4>Dear " + customer.Name + ",</h4>"
-                  + "<p>Thank you for signing up with Molla Fuel And Car Service. We are thrilled to have you as a member of our community! " +
-                  "We believe that our service will benefit, and we can't wait to see the impact that you'll make with it." +
-                  "If you have any questions or need assistance, please don't hesitate to reach out to us at [mollasfuel@gmail.com]. We're here to help!</p>"
-                  + "<p>Once again, welcome to Molla Fuel And Car Service, and thank you for choosing us.</p>"
-                  + "<h4>Best regards,</h4>"
-                  + "<h3>MOLLA FUEL AND CAR SERVICE</h3>"
-                  + "</div>";
-            var smtpClient = new SmtpClient("smtp.gmail.com")
-            {
-                Port = 587,
-                Credentials = new NetworkCredential(senderEmail, senderPassword),
-                EnableSsl = true,
-            };
-
-            var message = new MailMessage(senderEmail, recipientEmail, subject, body)
-            {
-                IsBodyHtml = true
-            };
-
-            smtpClient.Send(message);
             try
             {
                 var data = CustomerService.Insert(customer);
